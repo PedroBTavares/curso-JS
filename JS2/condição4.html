@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição 4</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade.</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="adn" id="adn">
+                <label for="adn"></label>
+            </p>
+            <div id="l"></div>
+            <p>já fez aniversário esse ano?
+                <input type="radio" name="sn" id="s">
+                <label for="s">sim</label>
+                <input type="radio" name="sn" id="n">
+                <label for="n">não</label>
+            </p>
+            <div id="l"></div>
+            <p>sexo:</p>
+            <input type="radio" name="r" id="masc">
+            <label for="masc">mascuino</label>
+            <input type="radio" name="r" id="fem">
+            <label for="fem">feminino</label>
+            <p><input type="button" value="verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            Resultado:
+        </div>
+    </section>
+    <footer>&copy; Pedro B.</footer>
+    <script src="script2.JS"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background: rgb(46, 201, 46);
+    font: normal 18px arial;
+}
+header{
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+div{
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+}
+div#res{
+    margin-top: 10px;
+}
+div#l{
+    background: black;
+    height: 2px;
+    padding: 0px;
+    border-radius: 0px;
+}
+p{
+    margin-left: 20px;
+}
+input{
+    margin-left: 20px;
+}
+footer{
+    font: italic 13px arial;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+body{
+    background: rgb(46, 201, 46);
+    font: normal 18px arial;
+    
+}
+header{
+    background: white;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+section{
+    background: white;
+    width: 450px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+footer{
+    font: italic 13px arial;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+select{
+    width: 150px;
+}

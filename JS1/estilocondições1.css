@@ -1,0 +1,20 @@
+body{
+    font: normal 15pt arial;
+    text-align: center;
+}
+header{
+    background-color: aqua;
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+}
+section{
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+footer{
+    font: italic 13pt arial;
+}

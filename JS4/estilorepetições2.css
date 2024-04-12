@@ -1,0 +1,33 @@
+body{
+    background: rgb(46, 201, 46);
+    font: normal 18px arial;  
+}
+header{
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+section{
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+div{
+    margin-left: 10px;
+}
+input#n{
+    width: 100px;
+}
+select#res{
+    width: 150px;
+}
+footer{
+    font: italic 13px arial;
+    margin: auto;
+    color: white;
+    text-align: center;
+}

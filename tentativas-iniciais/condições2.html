@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="analisar" onclick="analisar()">
+    <p>
+        Você é...
+    </p>
+    <script>
+        function analisar(){
+            const nação = document.getElementById('nac');
+            const p = document.getElementsByTagName('p')[0];
+            if (nação === 'Brasil'){
+                p.innerHTML= "Você é brasileiro.";
+            } else {
+                p.innerHTML= "Você é estrangeiro.";
+            }
+        }
+    </script>
+</body>
+</html>

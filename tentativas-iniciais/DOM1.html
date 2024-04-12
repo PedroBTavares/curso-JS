@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+    <style>
+        body {
+            background: rgb(125, 25, 255);
+            color: rgb(0, 0, 116);
+            font: normal 15pt arial;
+            
+        }
+        div#area {
+            background: rgb(125, 25, 255);
+            color: white;
+            width: 200px;
+            height: 75px;
+            font: normal 20pt arial;
+            line-height: 75px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Vamos lá.</p>
+    <p>...</p>
+    <div id="area">Clique em mim.</div>
+    <script>
+        const corpo = document.getElementsByTagName('body')[0]
+        const senha = prompt('defina uma senha');
+        const senha1 = prompt('digite a senha');
+        const confirmação = senha == senha1;
+        const sigaPare = confirmação? alert('senha correta'):
+        corpo.innerHTML = 'senha incorreta';
+        //senha
+        const area = document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+
+        function clicar() {
+            corpo.innerHTML = 'Você clicou.';
+        }
+        function entrar() {
+            area.style.background = 'green';
+        }
+        function sair(){
+            area.style.background = 'rgb(125, 25, 255)';
+        }
+    </script>
+</body>
+</html>

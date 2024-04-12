@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições 1</title>
+    <style>
+        body {
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Vamos lá.</p>
+    <script>
+        const corpo = document.getElementsByTagName('body')[0];
+        const senha = prompt ('defina uma senha');
+        const senha1 = prompt('digite a senha');
+        const confirmação = senha == senha1;
+        if (confirmação) {
+            alert('senha correta')
+        } else {
+            corpo.innerHTML = 'senha incorreta';
+        }
+    </script>
+</body>
+</html>

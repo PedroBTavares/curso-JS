@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+    <style>
+        body {
+            background: rgb(125, 25, 255);
+            font: normal 15pt arial;
+        }
+        input {
+            width:95px;
+            height: 40px;
+            font: normal 18px arial;
+        }
+        input#r{
+            font: normal 40px arial;
+            height: 75px;
+            width: 200px;
+            margin-top: 50px;
+            margin-left: 180px
+        }
+        p#res{
+            font: normal 30px arial;
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="ctn1" id="ctn1">
+    <input type="number" name="ctn2" id="ctn2">
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="dividir" onclick="dividir()">
+    <p id="res"><strong>Resultado</strong></p>
+    <input type="button" id="r" value="restaurar" onclick="restaurar()">
+    <script>
+        const res = document.getElementById('res');
+        const ctn1 = document.getElementById('ctn1');
+        const ctn2 = document.getElementById('ctn2');
+
+        function somar(){
+            const v1 = Number(ctn1.value);
+            const v2 = Number(ctn2.value);
+            const resultado = v1 + v2;
+            res.innerHTML = resultado;
+        }
+        function subtrair(){
+            const v1 = Number(ctn1.value);
+            const v2 = Number(ctn2.value);
+            const resultado = v1 - v2;
+            res.innerHTML = resultado;
+        }
+        function multiplicar(){
+            const v1 = Number(ctn1.value);
+            const v2 = Number(ctn2.value);
+            const resultado = v1 * v2;
+            res.innerHTML = resultado;
+        }
+        function dividir(){
+            const v1 = Number(ctn1.value);
+            const v2 = Number(ctn2.value);
+            const resultado = v1 / v2;
+            res.innerHTML = resultado;
+        }
+        function restaurar(){
+            res.innerHTML= 'resultado';
+        }
+    </script>
+</body>
+</html>
